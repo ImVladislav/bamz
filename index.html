@@ -1662,6 +1662,8 @@
       width: 100%
     }
 
+
+
     :host(:not(.device-mobile-optimized)) .G5K6X8,
     body:not(.device-mobile-optimized) .G5K6X8 {
       margin-left: calc((100% - var(--site-width))/2);
@@ -1850,7 +1852,7 @@
 
     .MazNVa .j7pOnl {
       display: block;
-      overflow: hidden
+      // overflow: hidden
     }
 
     .MazNVa .BI8PVQ {
@@ -4001,7 +4003,7 @@
       flex-direction: var(--items-direction);
       margin: 0 auto;
       position: relative;
-      width: calc(100% - var(--padding)*2)
+      width: 60%;
     }
 
     :host(:not(.device-mobile-optimized)) .V5AUxf>*,
@@ -6530,8 +6532,10 @@
 
     [data-mesh-id=SITE_FOOTERinlineContent-gridContainer]>[id="comp-lnhvk19o"] {
       position: relative;
-      margin: 39px 0px 3px calc((100% - 980px) * 0.5);
-      left: 43px;
+      margin: 39px 0px 3px 0px;
+      display: flex;
+      width: 100%;
+      justify-content: center;
       grid-area: 1 / 1 / 2 / 2;
       justify-self: start;
       align-self: start;
@@ -6548,11 +6552,12 @@
 
     [data-mesh-id=SITE_FOOTERinlineContent-gridContainer]>[id="comp-m2tvbgqw"] {
       position: relative;
-      margin: 0px 0px 10px calc((100% - 980px) * 0.5);
+      margin: 0px 0px 10px 0px;
       left: 167px;
       grid-area: 2 / 1 / 3 / 2;
       justify-self: start;
       align-self: start;
+  
     }
 
     [data-mesh-id=SITE_FOOTERinlineContent-gridContainer]>[id="comp-lvh0njo1"] {
@@ -6595,15 +6600,7 @@
       --contentPaddingBottom: 0px;
     }
 
-    #comp-lnhvk19o {
-      width: 894px;
-      height: 198px;
-    }
 
-    #comp-lnhvk19o {
-      --height: 198px;
-      --width: 894px;
-    }
 
     #comp-lnhvk19s {
       --contentPaddingLeft: 0px;
@@ -8345,10 +8342,12 @@
       min-width: 980px;
     }
 
-    [data-mesh-id=comp-lnhrq6v3inlineContent] {
+         [data-mesh-id=comp-lnhrq6v3inlineContent] {
       height: auto;
       width: 100%;
+    
     }
+ 
 
     [data-mesh-id=comp-lnhrq6v3inlineContent-gridContainer] {
       position: static;
@@ -8431,9 +8430,13 @@
     }
 
     #comp-lnhrq6v3 {
+      width: 70%;
+    }
+@media screen and (min-width: 1000px){
+      #comp-lnhrq6v3 {
       width: 980px;
     }
-
+}
     #comp-lnhugtug {
       --contentPaddingLeft: 0px;
       --contentPaddingRight: 0px;
@@ -9082,8 +9085,17 @@
       --bg-overlay-color: transparent;
       --bg-gradient: none;
       width: 100%;
-      --column-width: 980px;
-      --column-flex: 980;
+
+    }
+
+    @media screen and (min-width: 1000px) {
+      
+      #comp-lnhrq6v3 {
+
+      width: 100%;
+
+    }
+      
     }
 
     #comp-lnhugtug {
@@ -9218,76 +9230,85 @@
                     data-num-items="4" data-menuborder-y="0" data-menubtn-border="0" data-ribbon-els="0"
                     data-label-pad="0" data-ribbon-extra="0" data-dropalign="center">
                     <nav class="R_TAzU" id="comp-lvgzeoa1navContainer" aria-label="Site">
-                      <ul class="y7qwii" id="comp-lvgzeoa1itemsContainer" style="text-align:center"
-                        data-marginallchildren="true">
-                        <li id="comp-lvgzeoa10" data-direction="ltr" data-listposition="center"
-                          data-data-id="dataItem-lnguk8cq" data-state="menu selected  link" data-index="0"
-                          class="Tg1gOB wixui-dropdown-menu__item xTjc1A"><a data-testid="linkElement"
-                            href="https://www.kozmikbumz.com" target="_self" class="UiHgGh" aria-current="page">
-                            <div class="yRj2ms">
-                              <div class="">
-                                <p class="JS76Uv" id="comp-lvgzeoa10label">Kozmik Bumz</p>
-                              </div>
-                            </div>
-                          </a></li>
-                        <li id="comp-lvgzeoa11" data-direction="ltr" data-listposition="center"
-                          data-data-id="dataItem-ln7pd8j9" data-state="menu false  link" data-index="1"
-                          class="Tg1gOB wixui-dropdown-menu__item xTjc1A"><a data-testid="linkElement" href="about.html"
-                            target="_self" class="UiHgGh">
-                            <div class="yRj2ms">
-                              <div class="">
-                                <p class="JS76Uv" id="comp-lvgzeoa11label">WTF</p>
-                              </div>
-                            </div>
-                          </a></li>
+                      <style>
+.custom-nav {
+  background-color: #ff0000;
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
 
-                        <li id="comp-lvgzeoa13" data-direction="ltr" data-listposition="center"
-                          data-data-id="dataItem-m5ofhygf" data-state="menu false  link" data-index="3"
-                          class="Tg1gOB wixui-dropdown-menu__item xTjc1A"><a data-testid="linkElement"
-                            href="http://www.kozmikworld.com" target="_blank" rel="noreferrer noopener" class="UiHgGh">
-                            <div class="yRj2ms">
-                              <div class="">
-                                <p class="JS76Uv" id="comp-lvgzeoa13label">Kozmik Store</p>
-                              </div>
-                            </div>
-                          </a></li>
-                        <li id="comp-lvgzeoa12" data-direction="ltr" data-listposition="center"
-                          data-data-id="dataItem-lvn4qm8r" data-state="menu false  link" data-index="2"
-                          class="Tg1gOB wixui-dropdown-menu__item xTjc1A"><a data-testid="linkElement"
-                            href="videos.html" target="_self" class="UiHgGh">
-                            <div class="yRj2ms">
-                              <div class="">
-                                <p class="JS76Uv" id="comp-lvgzeoa12label">X</p>
-                              </div>
-                            </div>
-                          </a></li>
-                        <li id="comp-lvgzeoa12" data-direction="ltr" data-listposition="center"
-                          data-data-id="dataItem-lvn4qm8r" data-state="menu false  link" data-index="2"
-                          class="Tg1gOB wixui-dropdown-menu__item xTjc1A"><a data-testid="linkElement" href="dex"
-                            target="_self" class="UiHgGh">
-                            <div class="yRj2ms">
-                              <div class="">
-                                <p class="JS76Uv" id="comp-lvgzeoa12label">Dex</p>
-                              </div>
-                            </div>
-                          </a></li>
-                        <li id="comp-lvgzeoa12" data-direction="ltr" data-listposition="center"
-                          data-data-id="dataItem-lvn4qm8r" data-state="menu false  link" data-index="2"
-                          class="Tg1gOB wixui-dropdown-menu__item xTjc1A"><a data-testid="linkElement"
-                            href="videos.html" target="_self" class="UiHgGh">
-                            <div class="yRj2ms">
-                              <div class="">
-                                <p class="JS76Uv" id="comp-lvgzeoa12label">Tg</p>
-                              </div>
-                            </div>
-                          </a></li>
-                      </ul>
-                      <div class="h3jCPd" id="comp-lvgzeoa1dropWrapper" data-dropalign="center"
-                        data-dropdown-shown="false">
-                        <ul class="wkJ2fp wixui-dropdown-menu__submenu" id="comp-lvgzeoa1moreContainer"></ul>
-                      </div>
-                      <div style="display:none" id="comp-lvgzeoa1navContainer-hiddenA11ySubMenuIndication">Use tab to
-                        navigate through the menu items.</div>
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.nav-left li,
+.nav-right li {
+  list-style: none;
+}
+
+.nav-left a,
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 22px;
+  transition: color 0.2s ease;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+  color: yellow;
+}
+
+
+.logo_footer {
+  width: 50%;
+}
+
+/* На планшетах і менше */
+@media screen and (min-width: 768px) {
+  .logo_footer {
+    width: 70%;
+  }
+}
+
+/* На мобільних */
+@media screen and (min-width: 1000px) {
+  .logo_footer {
+    width: 100%;
+  }
+}
+
+</style>
+
+<nav class="custom-nav">
+  <div class="nav-wrapper">
+    <ul class="nav-left">
+      <li><a href="https://www.kozmikbumz.com">Kozmik Bumz</a></li>
+      <li><a href="videos.html">Shortz</a></li>
+    </ul>
+    <ul class="nav-right">
+      <li><a href="http://www.kozmikworld.com" target="_blank" rel="noopener noreferrer">Kozmik Store</a></li>
+      <li><a href="#">Dex</a></li>
+      <li><a href="#">Tg</a></li>
+    </ul>
+  </div>
+</nav>
+
                     </nav>
                   </wix-dropdown-menu><!--/$-->
                 </div>
@@ -9339,9 +9360,8 @@
                                 <div id="comp-lnguxxfx" class="MazNVa comp-lnguxxfx wixui-image"
                                   title="KOZMIK LOGO.png">
                                   <div data-testid="linkElement" class="j7pOnl"><img fetchpriority="high" sizes="824px"
-                                      srcSet="https://static.wixstatic.com/media/4ece7e_0af0d6064d554ca3b3ab58ede6453a70~mv2.png/v1/fill/w_824,h_367,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_0af0d6064d554ca3b3ab58ede6453a70~mv2.png 1x, https://static.wixstatic.com/media/4ece7e_0af0d6064d554ca3b3ab58ede6453a70~mv2.png/v1/fill/w_1648,h_734,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_0af0d6064d554ca3b3ab58ede6453a70~mv2.png 2x"
                                       id="img_comp-lnguxxfx"
-                                      src="https://static.wixstatic.com/media/4ece7e_0af0d6064d554ca3b3ab58ede6453a70~mv2.png/v1/fill/w_824,h_367,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_0af0d6064d554ca3b3ab58ede6453a70~mv2.png"
+                                      src="./img/Bamz.png"
                                       alt="" style="object-fit:cover" class="BI8PVQ Tj01hh" width="824" height="367" />
                                   </div>
                                 </div><!--/$--><!--$-->
@@ -9407,9 +9427,10 @@
                                             style="font-size:26px;" class="wixui-rich-text__text"><span
                                               style="font-family:wfont_4ece7e_e03d41e030a84008bfb0291fb29137ae,wf_e03d41e030a84008bfb0291fb,orig_extra_giant_rough;"
                                               class="wixui-rich-text__text"><span style="color:#FDF733;"
-                                                class="wixui-rich-text__text">Those who seek richez will be rewarded
-                                                Those who seek enlightenment will find
-                                                their BLISS...</span></span></span></h2>
+                                                class="wixui-rich-text__text">For fiends hunting the rush, the stash
+                                                opens wide.
+                                                For voyagers of the mind, the trip never fades…
+                                              </span></span></span></h2>
                                       </div><!--/$-->
                                     </div>
                                   </div>
@@ -9545,9 +9566,8 @@
                                       <div id="comp-lngvbn3c" class="MazNVa comp-lngvbn3c wixui-image">
                                         <div data-testid="linkElement" class="j7pOnl"><img fetchpriority="high"
                                             sizes="387px"
-                                            srcSet="https://static.wixstatic.com/media/4ece7e_306d075ddc834b4fb11d7fc55ca0785e~mv2.png/v1/fill/w_387,h_238,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_306d075ddc834b4fb11d7fc55ca0785e~mv2.png 1x, https://static.wixstatic.com/media/4ece7e_306d075ddc834b4fb11d7fc55ca0785e~mv2.png/v1/fill/w_774,h_476,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_306d075ddc834b4fb11d7fc55ca0785e~mv2.png 2x"
                                             id="img_comp-lngvbn3c"
-                                            src="https://static.wixstatic.com/media/4ece7e_306d075ddc834b4fb11d7fc55ca0785e~mv2.png/v1/fill/w_387,h_238,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_306d075ddc834b4fb11d7fc55ca0785e~mv2.png"
+                                            src="./img/2.avif"
                                             alt="" style="object-fit:cover" class="BI8PVQ Tj01hh" width="387"
                                             height="238" /></div>
                                       </div><!--/$-->
@@ -9610,7 +9630,8 @@
                                         style="color:#FDF733;" class="wixui-rich-text__text"><span
                                           style="font-size:51px;" class="wixui-rich-text__text"><span
                                             style="font-family:wfont_4ece7e_e03d41e030a84008bfb0291fb29137ae,wf_e03d41e030a84008bfb0291fb,orig_extra_giant_rough;"
-                                            class="wixui-rich-text__text">Follow Your Bling...</span></span></span></h2>
+                                            class="wixui-rich-text__text">
+                                            follow your desire</span></span></span></h2>
                                   </div><!--/$-->
                                 </div><!--$-->
                                 <div id="comp-lngwwd3n" class="comp-lngwwd3n SPY_vo">
@@ -9643,17 +9664,15 @@
                                       </div><!--/$--><!--$-->
                                       <div id="comp-lngwu5zq" class="MazNVa comp-lngwu5zq wixui-image">
                                         <div data-testid="linkElement" class="j7pOnl"><img loading="lazy" sizes="243px"
-                                            srcSet="https://static.wixstatic.com/media/4ece7e_1faad9e869af4dc5831d7ed91cd79dbb~mv2.png/v1/fill/w_243,h_306,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_1faad9e869af4dc5831d7ed91cd79dbb~mv2.png 1x, https://static.wixstatic.com/media/4ece7e_1faad9e869af4dc5831d7ed91cd79dbb~mv2.png/v1/fill/w_486,h_612,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_1faad9e869af4dc5831d7ed91cd79dbb~mv2.png 2x"
                                             id="img_comp-lngwu5zq"
-                                            src="https://static.wixstatic.com/media/4ece7e_1faad9e869af4dc5831d7ed91cd79dbb~mv2.png/v1/fill/w_243,h_306,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_1faad9e869af4dc5831d7ed91cd79dbb~mv2.png"
+                                            src="./img/3.avif"
                                             alt="" style="object-fit:cover" class="BI8PVQ Tj01hh" width="243"
                                             height="306" /></div>
                                       </div><!--/$--><!--$-->
                                       <div id="comp-lngwu602" class="MazNVa comp-lngwu602 wixui-image">
                                         <div data-testid="linkElement" class="j7pOnl"><img loading="lazy" sizes="241px"
-                                            srcSet="https://static.wixstatic.com/media/4ece7e_e389c0c268f142328584faa5d46f598c~mv2.png/v1/fill/w_241,h_311,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_e389c0c268f142328584faa5d46f598c~mv2.png 1x, https://static.wixstatic.com/media/4ece7e_e389c0c268f142328584faa5d46f598c~mv2.png/v1/fill/w_482,h_622,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_e389c0c268f142328584faa5d46f598c~mv2.png 2x"
                                             id="img_comp-lngwu602"
-                                            src="https://static.wixstatic.com/media/4ece7e_e389c0c268f142328584faa5d46f598c~mv2.png/v1/fill/w_241,h_311,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_e389c0c268f142328584faa5d46f598c~mv2.png"
+                                            src="./img/4.avif"
                                             alt="" style="object-fit:cover" class="BI8PVQ Tj01hh" width="241"
                                             height="311" /></div>
                                       </div><!--/$-->
@@ -9662,25 +9681,22 @@
                                 </div><!--/$--><!--$-->
                                 <div id="comp-lngxxh6s" class="MazNVa comp-lngxxh6s wixui-image">
                                   <div data-testid="linkElement" class="j7pOnl"><img loading="lazy" sizes="38px"
-                                      srcSet="https://static.wixstatic.com/media/4ece7e_212eb565522b4fdfac45814b81e261c5~mv2.png/v1/fill/w_38,h_51,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_212eb565522b4fdfac45814b81e261c5~mv2.png 1x, https://static.wixstatic.com/media/4ece7e_212eb565522b4fdfac45814b81e261c5~mv2.png/v1/fill/w_76,h_102,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_212eb565522b4fdfac45814b81e261c5~mv2.png 2x"
                                       id="img_comp-lngxxh6s"
-                                      src="https://static.wixstatic.com/media/4ece7e_212eb565522b4fdfac45814b81e261c5~mv2.png/v1/fill/w_38,h_51,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_212eb565522b4fdfac45814b81e261c5~mv2.png"
+                                      src="./img/5.avif"
                                       alt="" style="object-fit:cover" class="BI8PVQ Tj01hh" width="38" height="51" />
                                   </div>
                                 </div><!--/$--><!--$-->
                                 <div id="comp-lngxxkgn" class="MazNVa comp-lngxxkgn wixui-image">
                                   <div data-testid="linkElement" class="j7pOnl"><img loading="lazy" sizes="54px"
-                                      srcSet="https://static.wixstatic.com/media/4ece7e_212eb565522b4fdfac45814b81e261c5~mv2.png/v1/fill/w_54,h_74,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_212eb565522b4fdfac45814b81e261c5~mv2.png 1x, https://static.wixstatic.com/media/4ece7e_212eb565522b4fdfac45814b81e261c5~mv2.png/v1/fill/w_108,h_148,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_212eb565522b4fdfac45814b81e261c5~mv2.png 2x"
                                       id="img_comp-lngxxkgn"
-                                      src="https://static.wixstatic.com/media/4ece7e_212eb565522b4fdfac45814b81e261c5~mv2.png/v1/fill/w_54,h_74,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_212eb565522b4fdfac45814b81e261c5~mv2.png"
+                                      src="./img/6.avif"
                                       alt="" style="object-fit:cover" class="BI8PVQ Tj01hh" width="54" height="74" />
                                   </div>
                                 </div><!--/$--><!--$-->
                                 <div id="comp-lngxylw7" class="MazNVa comp-lngxylw7 wixui-image">
                                   <div data-testid="linkElement" class="j7pOnl"><img loading="lazy" sizes="38px"
-                                      srcSet="https://static.wixstatic.com/media/4ece7e_212eb565522b4fdfac45814b81e261c5~mv2.png/v1/fill/w_38,h_51,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_212eb565522b4fdfac45814b81e261c5~mv2.png 1x, https://static.wixstatic.com/media/4ece7e_212eb565522b4fdfac45814b81e261c5~mv2.png/v1/fill/w_76,h_102,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_212eb565522b4fdfac45814b81e261c5~mv2.png 2x"
                                       id="img_comp-lngxylw7"
-                                      src="https://static.wixstatic.com/media/4ece7e_212eb565522b4fdfac45814b81e261c5~mv2.png/v1/fill/w_38,h_51,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_212eb565522b4fdfac45814b81e261c5~mv2.png"
+                                      src="./img/Bamz.png"
                                       alt="" style="object-fit:cover" class="BI8PVQ Tj01hh" width="38" height="51" />
                                   </div>
                                 </div><!--/$-->
@@ -9723,15 +9739,16 @@
                                         style="color:#FDF733;" class="wixui-rich-text__text"><span
                                           style="font-size:34px;" class="wixui-rich-text__text"><span
                                             style="font-family:wfont_4ece7e_e03d41e030a84008bfb0291fb29137ae,wf_e03d41e030a84008bfb0291fb,orig_extra_giant_rough;"
-                                            class="wixui-rich-text__text">Rewards for Those Who Seek True
-                                            Wizdom!</span></span></span></h2>
+                                            class="wixui-rich-text__text">
+                                            Rewards for Those Who Seek True Pleasure
+
+                                            </span></span></span></h2>
                                   </div><!--/$-->
                                 </div><!--$-->
                                 <div id="comp-lngxsok3" class="MazNVa comp-lngxsok3 wixui-image">
                                   <div data-testid="linkElement" class="j7pOnl"><img loading="lazy" sizes="296px"
-                                      srcSet="https://static.wixstatic.com/media/4ece7e_efb448b7627641c4b778caf3dc67799e~mv2.png/v1/fill/w_296,h_387,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_efb448b7627641c4b778caf3dc67799e~mv2.png 1x, https://static.wixstatic.com/media/4ece7e_efb448b7627641c4b778caf3dc67799e~mv2.png/v1/fill/w_592,h_774,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_efb448b7627641c4b778caf3dc67799e~mv2.png 2x"
                                       id="img_comp-lngxsok3"
-                                      src="https://static.wixstatic.com/media/4ece7e_efb448b7627641c4b778caf3dc67799e~mv2.png/v1/fill/w_296,h_387,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_efb448b7627641c4b778caf3dc67799e~mv2.png"
+                                      src="./img/5.avif"
                                       alt="" style="object-fit:cover" class="BI8PVQ Tj01hh" width="296" height="387" />
                                   </div>
                                 </div><!--/$--><!--$-->
@@ -9905,9 +9922,8 @@
                                           <div id="comp-lnhpfwag" class="MazNVa comp-lnhpfwag wixui-image">
                                             <div data-testid="linkElement" class="j7pOnl"><img loading="lazy"
                                                 sizes="482px"
-                                                srcSet="https://static.wixstatic.com/media/4ece7e_359c635a85b343c8b919ae2b9ba48d50~mv2.png/v1/fill/w_482,h_756,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_359c635a85b343c8b919ae2b9ba48d50~mv2.png 1x, https://static.wixstatic.com/media/4ece7e_359c635a85b343c8b919ae2b9ba48d50~mv2.png/v1/fill/w_964,h_1512,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_359c635a85b343c8b919ae2b9ba48d50~mv2.png 2x"
                                                 id="img_comp-lnhpfwag"
-                                                src="https://static.wixstatic.com/media/4ece7e_359c635a85b343c8b919ae2b9ba48d50~mv2.png/v1/fill/w_482,h_756,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_359c635a85b343c8b919ae2b9ba48d50~mv2.png"
+                                                src="./img/6.avif"
                                                 alt="" style="object-fit:cover" class="BI8PVQ Tj01hh" width="482"
                                                 height="756" /></div>
                                           </div><!--/$--><!--$-->
@@ -10125,9 +10141,8 @@
                                                 <div id="comp-lnhqtpha" class="MazNVa comp-lnhqtpha wixui-image">
                                                   <div data-testid="linkElement" class="j7pOnl"><img loading="lazy"
                                                       sizes="1059px"
-                                                      srcSet="https://static.wixstatic.com/media/4ece7e_0af0d6064d554ca3b3ab58ede6453a70~mv2.png/v1/fill/w_1059,h_471,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_0af0d6064d554ca3b3ab58ede6453a70~mv2.png 1x, https://static.wixstatic.com/media/4ece7e_0af0d6064d554ca3b3ab58ede6453a70~mv2.png/v1/fill/w_2118,h_942,al_c,q_95,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_0af0d6064d554ca3b3ab58ede6453a70~mv2.png 2x"
                                                       id="img_comp-lnhqtpha"
-                                                      src="https://static.wixstatic.com/media/4ece7e_0af0d6064d554ca3b3ab58ede6453a70~mv2.png/v1/fill/w_1059,h_471,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_0af0d6064d554ca3b3ab58ede6453a70~mv2.png"
+                                                      src="./img/Bamz.png"
                                                       alt="" style="object-fit:cover" class="BI8PVQ Tj01hh" width="1059"
                                                       height="471" /></div>
                                                 </div><!--/$--><!--$-->
@@ -10190,13 +10205,12 @@
                 <div data-mesh-id="SITE_FOOTERinlineContent" data-testid="inline-content" class="">
                   <div data-mesh-id="SITE_FOOTERinlineContent-gridContainer" data-testid="mesh-container-content">
                     <!--$-->
-                    <div id="comp-lnhvk19o" class="MazNVa comp-lnhvk19o wixui-image">
-                      <div data-testid="linkElement" class="j7pOnl"><img loading="lazy" sizes="894px"
-                          srcSet="https://static.wixstatic.com/media/4ece7e_eed76b81599c4f79b15241efd9806bcd~mv2.png/v1/fill/w_894,h_198,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_eed76b81599c4f79b15241efd9806bcd~mv2.png 1x, https://static.wixstatic.com/media/4ece7e_eed76b81599c4f79b15241efd9806bcd~mv2.png/v1/fill/w_1327,h_294,al_c,lg_1,q_90,enc_avif,quality_auto/4ece7e_eed76b81599c4f79b15241efd9806bcd~mv2.png 2x"
+                    <div id="comp-lnhvk19o" class="box_img">
+                      <div data-testid="linkElement" class="logo_footer"><img loading="lazy" 
                           id="img_comp-lnhvk19o"
-                          src="https://static.wixstatic.com/media/4ece7e_eed76b81599c4f79b15241efd9806bcd~mv2.png/v1/fill/w_894,h_198,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ece7e_eed76b81599c4f79b15241efd9806bcd~mv2.png"
-                          alt="Kozmik World Logo" style="object-fit:cover" class="BI8PVQ Tj01hh" width="894"
-                          height="198" /></div>
+                          src="./img/8.avif"
+                          alt="Kozmik World Logo" style="object-fit:cover" class="BI8PVQ Tj01hh"/>
+                          </div>
                     </div><!--/$--><!--$-->
                     <div id="comp-lnhvk19s" class="MazNVa comp-lnhvk19s wixui-image">
                       <div data-testid="linkElement" class="j7pOnl"><img loading="lazy" sizes="125px"
@@ -10215,75 +10229,27 @@
                             class="wixui-rich-text__text"><span class="color_15 wixui-rich-text__text"><span
                                 style="letter-spacing:0em;" class="wixui-rich-text__text">Just Dose
                                 It.</span></span></span></span></h2>
-                    </div><!--/$--><!--$--><wix-dropdown-menu id="comp-lvh0njo1"
-                      class="XwCBRN NHM1d1 comp-lvh0njo1 wixui-dropdown-menu hidden-during-prewarmup" tabIndex="-1"
-                      dir="ltr" data-stretch-buttons-to-menu-width="false" data-same-width-buttons="false"
-                      data-num-items="4" data-menuborder-y="0" data-menubtn-border="0" data-ribbon-els="0"
-                      data-label-pad="0" data-ribbon-extra="0" data-dropalign="center">
-                      <nav class="R_TAzU" id="comp-lvh0njo1navContainer" aria-label="Site">
-                        <ul class="y7qwii" id="comp-lvh0njo1itemsContainer" style="text-align:center"
-                          data-marginallchildren="true">
-                          <li id="comp-lvh0njo10" data-direction="ltr" data-listposition="center"
-                            data-data-id="dataItem-lnguk8cq" data-state="menu selected  link" data-index="0"
-                            class="Tg1gOB wixui-dropdown-menu__item xTjc1A"><a data-testid="linkElement"
-                              href="https://www.kozmikbumz.com" target="_self" class="UiHgGh" aria-current="page">
-                              <div class="yRj2ms">
-                                <div class="">
-                                  <p class="JS76Uv" id="comp-lvh0njo10label">Kozmik Bumz</p>
-                                </div>
-                              </div>
-                            </a></li>
-                          <li id="comp-lvh0njo11" data-direction="ltr" data-listposition="center"
-                            data-data-id="dataItem-ln7pd8j9" data-state="menu false  link" data-index="1"
-                            class="Tg1gOB wixui-dropdown-menu__item xTjc1A"><a data-testid="linkElement"
-                              href="about.html" target="_self" class="UiHgGh">
-                              <div class="yRj2ms">
-                                <div class="">
-                                  <p class="JS76Uv" id="comp-lvh0njo11label">WTF</p>
-                                </div>
-                              </div>
-                            </a></li>
-                          <li id="comp-lvh0njo12" data-direction="ltr" data-listposition="center"
-                            data-data-id="dataItem-lvn4qm8r" data-state="menu false  link" data-index="2"
-                            class="Tg1gOB wixui-dropdown-menu__item xTjc1A"><a data-testid="linkElement"
-                              href="videos.html" target="_self" class="UiHgGh">
-                              <div class="yRj2ms">
-                                <div class="">
-                                  <p class="JS76Uv" id="comp-lvh0njo12label">Shortz</p>
-                                </div>
-                              </div>
-                            </a></li>
-                          <li id="comp-lvh0njo13" data-direction="ltr" data-listposition="center"
-                            data-data-id="dataItem-m5ofhygf" data-state="menu false  link" data-index="3"
-                            class="Tg1gOB wixui-dropdown-menu__item xTjc1A"><a data-testid="linkElement"
-                              href="http://www.kozmikworld.com" target="_blank" rel="noreferrer noopener"
-                              class="UiHgGh">
-                              <div class="yRj2ms">
-                                <div class="">
-                                  <p class="JS76Uv" id="comp-lvh0njo13label">Kozmik Store</p>
-                                </div>
-                              </div>
-                            </a></li>
-                          <li id="comp-lvh0njo1__more__" data-direction="ltr" data-listposition="center"
-                            data-state="menu false  header" data-index="__more__" data-dropdown="false"
-                            class="p90CkU xTjc1A">
-                            <div data-testid="linkElement" class="UiHgGh" tabindex="0" aria-haspopup="true">
-                              <div class="yRj2ms">
-                                <div class="">
-                                  <p class="JS76Uv" id="comp-lvh0njo1__more__label">More</p>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                        <div class="h3jCPd" id="comp-lvh0njo1dropWrapper" data-dropalign="center"
-                          data-dropdown-shown="false">
-                          <ul class="wkJ2fp wixui-dropdown-menu__submenu" id="comp-lvh0njo1moreContainer"></ul>
-                        </div>
-                        <div style="display:none" id="comp-lvh0njo1navContainer-hiddenA11ySubMenuIndication">Use tab to
-                          navigate through the menu items.</div>
-                      </nav>
-                    </wix-dropdown-menu><!--/$--><!--$-->
+
+
+<nav class="custom-nav">
+  <div class="nav-wrapper">
+    <ul class="nav-left">
+      <li><a href="https://www.kozmikbumz.com">Kozmik Bumz</a></li>
+
+      <li><a href="http://www.kozmikworld.com" target="_blank" rel="noopener noreferrer">Kozmik Store</a></li>
+    </ul>
+    <ul class="nav-right">
+      <li><a href="#">X</a></li>
+      <li><a href="#">Dex</a></li>
+      <li><a href="#">Tg</a></li>
+
+    </ul>
+  </div>
+</nav>
+
+
+
+                 
                     <div id="comp-lnhvk1a9" class="bkIuWA comp-lnhvk1a9">
                       <div data-mesh-id="comp-lnhvk1a9inlineContent" data-testid="inline-content" class="">
                         <div data-mesh-id="comp-lnhvk1a9inlineContent-gridContainer"
@@ -10427,7 +10393,12 @@
 
 
 
-
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.classList.toggle("active");
+    }
+  </script>
 
 
 
