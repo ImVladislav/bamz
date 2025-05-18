@@ -4,7 +4,7 @@
 <head>
 
   <meta charset='utf-8'>
-<meta name="viewport" content="width=device-width, initial-scale=4.98, maximum-scale=4.98, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=4.98, maximum-scale=4.98, user-scalable=yes">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Wix.com Website Builder" />
 
@@ -9315,7 +9315,47 @@
   padding: 0 20px;
   box-sizing: border-box;
 }
+  .nav-wrapper a {
+    font-family: wfont_4ece7e_e03d41e030a84008bfb0291fb29137ae, 
+                 wf_e03d41e030a84008bfb0291fb, 
+                 orig_extra_giant_rough;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s ease;
+  }
 
+  .nav-wrapper a:hover {
+    color: yellow;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-left, .nav-right {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .nav-wrapper {
+      flex-direction: column;
+    }
+
+    .nav-left, .nav-right {
+      justify-content: center;
+      width: 100%;
+    }
+  }
 </style>
 
 <nav class="custom-nav">
