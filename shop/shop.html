@@ -1,825 +1,782 @@
 <!DOCTYPE html>
-<html
-   data-wf-domain="www.trippie.meme"
-   data-wf-page="673f1d072d0a879bad4b3be0"
-   data-wf-site="673f1d072d0a879bad4b3bd1"
->
-   <head>
-      <script
-         defer
-         src="https://cloud.umami.is/script.js"
-         data-website-id="3a64c0ee-82ac-4ef8-ad4c-dab01681e12f"
-      ></script>
-      <meta charset="utf-8" />
-      <title>PIPA MARKET</title>
-      <meta content="PIPA token marketplace" name="description" />
-      <meta content="PIPA MARKET" property="og:title" />
-      <meta content="PIPA token marketplace" property="og:description" />
-      <meta content="PIPA MARKET" property="twitter:title" />
-      <meta content="PIPA token marketplace" property="twitter:description" />
-      <meta property="og:type" content="website" />
-      <meta content="summary_large_image" name="twitter:card" />
-      <meta content="width=device-width, initial-scale=1" name="viewport" />
-      <link
-         href="https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/css/aero-meme-9dc0f3c7ce7a48bdfc7589dcf5095.5083ad25d.css"
-         rel="stylesheet"
-         type="text/css"
-      />
-      <link href="https://fonts.googleapis.com" rel="preconnect" />
-      <link
-         href="https://fonts.gstatic.com"
-         rel="preconnect"
-         crossorigin="anonymous"
-      />
-      <script
-         src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
-         type="text/javascript"
-      ></script>
-      <script type="text/javascript">
-         WebFont.load({
-            google: {
-               families: [
-                  'DynaPuff:regular,500,600,700:cyrillic-ext,latin,latin-ext',
-                  'Pixelify Sans:regular',
-                  'Rubik Pixels:regular'
-               ]
-            }
-         });
-      </script>
-      <script type="text/javascript">
-         !(function (o, c) {
-            var n = c.documentElement,
-               t = ' w-mod-';
-            (n.className += t + 'js'),
-               ('ontouchstart' in o ||
-                  (o.DocumentTouch && c instanceof DocumentTouch)) &&
-                  (n.className += t + 'touch');
-         })(window, document);
-      </script>
-      <link
-         href="https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/674799fa34acafce124fd60c_Mask%20group-1.png"
-         rel="shortcut icon"
-         type="image/x-icon"
-      />
-      <link
-         href="https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/674799ffd77d1624ff889f59_Mask%20group.png"
-         rel="apple-touch-icon"
-      />
-      <style>
-         body,
-         a {
-            cursor: url(https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/6747613398cf2b66b693af36_pointerio.svg),
-               auto;
-         }
-         .text-block-8 {
-            margin-left: 0px !important;
-         }
-         .image {
-            width: 30% !important;
-         }
-         .z-100 {
-            z-index: 100 !important;
-         }
-         .market-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 80vh;
-            padding: 20px;
-            max-width: 1400px;
-            margin: 0 auto;
-         }
-         .market-title {
-            font-family: 'DynaPuff', sans-serif;
-            font-size: 42px;
-            margin-bottom: 40px;
-            color: #fff;
-            text-align: center;
-         }
-         .market-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-            width: 100%;
-         }
-         .market-item {
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 15px;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            transition: transform 0.3s;
-            text-align: center;
-         }
-         .market-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-         }
-         .market-item img {
-            width: 100%;
-            max-width: 200px;
-            margin-bottom: 15px;
-            object-fit: contain;
-            height: 180px;
-         }
-         .market-item-title {
-            font-family: 'DynaPuff', sans-serif;
-            font-size: 18px;
-            color: #333;
-            margin-bottom: 10px;
-            min-height: 80px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            line-height: 1.3;
-         }
-         .market-item-price {
-            font-family: 'DynaPuff', sans-serif;
-            font-size: 24px;
-            color: #333;
-            margin: 15px 0;
-            font-weight: bold;
-         }
-         .back-button {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            padding: 10px 20px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            color: #fff;
-            font-family: 'DynaPuff', sans-serif;
-            text-decoration: none;
-            transition: background-color 0.3s;
-         }
-         .back-button:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-         }
-         .rating {
-            color: #ffd700;
-            font-size: 20px;
-            margin: 10px 0;
-         }
-         .reviews {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 15px;
-         }
-         .quantity-input {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 15px;
-         }
-         .quantity-input span {
-            font-family: 'DynaPuff', sans-serif;
-            margin-right: 10px;
-            color: #333;
-         }
-         .quantity-input input {
-            width: 60px;
-            padding: 8px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            text-align: center;
-         }
-         .add-to-cart {
-            background-color: #8bc34a;
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 30px;
-            font-family: 'DynaPuff', sans-serif;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            width: 100%;
-            max-width: 200px;
-         }
-         .add-to-cart:hover {
-            background-color: #7cb342;
-         }
-         body {
-            background-color: #f5f5f5;
-         }
-         .body {
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-         }
+<html data-wf-domain="www.trippie.meme" data-wf-page="673f1d072d0a879bad4b3be0" data-wf-site="673f1d072d0a879bad4b3bd1">
 
-         /* Age verification popup styles */
-         .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            z-index: 1000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+<head>
+   <script defer src="https://cloud.umami.is/script.js" data-website-id="3a64c0ee-82ac-4ef8-ad4c-dab01681e12f"></script>
+   <meta charset="utf-8" />
+   <title>PIPA MARKET</title>
+   <meta content="PIPA token marketplace" name="description" />
+   <meta content="PIPA MARKET" property="og:title" />
+   <meta content="PIPA token marketplace" property="og:description" />
+   <meta content="PIPA MARKET" property="twitter:title" />
+   <meta content="PIPA token marketplace" property="twitter:description" />
+   <meta property="og:type" content="website" />
+   <meta content="summary_large_image" name="twitter:card" />
+   <meta content="width=device-width, initial-scale=1" name="viewport" />
+   <link
+      href="https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/css/aero-meme-9dc0f3c7ce7a48bdfc7589dcf5095.5083ad25d.css"
+      rel="stylesheet" type="text/css" />
+   <link href="https://fonts.googleapis.com" rel="preconnect" />
+   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+   <script type="text/javascript">
+      WebFont.load({
+         google: {
+            families: [
+               'DynaPuff:regular,500,600,700:cyrillic-ext,latin,latin-ext',
+               'Pixelify Sans:regular',
+               'Rubik Pixels:regular'
+            ]
          }
+      });
+   </script>
+   <script type="text/javascript">
+      !(function (o, c) {
+         var n = c.documentElement,
+            t = ' w-mod-';
+         (n.className += t + 'js'),
+            ('ontouchstart' in o ||
+               (o.DocumentTouch && c instanceof DocumentTouch)) &&
+            (n.className += t + 'touch');
+      })(window, document);
+   </script>
+   <link href="https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/674799fa34acafce124fd60c_Mask%20group-1.png"
+      rel="shortcut icon" type="image/x-icon" />
+   <link href="https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/674799ffd77d1624ff889f59_Mask%20group.png"
+      rel="apple-touch-icon" />
+   <style>
+      body,
+      a {
+         cursor: url(https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/6747613398cf2b66b693af36_pointerio.svg),
+            auto;
+      }
 
-         .popup {
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            text-align: center;
-            max-width: 500px;
-            position: relative;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-         }
+      .text-block-8 {
+         margin-left: 0px !important;
+      }
 
-         .popup h2 {
-            color: #65b247;
-            font-size: 32px;
-            font-family: 'DynaPuff', sans-serif;
-            margin-bottom: 20px;
-         }
+      .image {
+         width: 30% !important;
+      }
 
-         .popup p {
-            color: #333;
-            font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 25px;
-            font-family: Arial, sans-serif;
-         }
+      .z-100 {
+         z-index: 100 !important;
+      }
 
-         .popup-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-         }
+      .market-container {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         min-height: 80vh;
+         padding: 20px;
+         max-width: 1400px;
+         margin: 0 auto;
+      }
 
-         .popup-button {
-            padding: 12px 40px;
-            border-radius: 30px;
-            font-family: 'DynaPuff', sans-serif;
-            font-size: 18px;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
-         }
+      .market-title {
+         font-family: 'DynaPuff', sans-serif;
+         font-size: 42px;
+         margin-bottom: 40px;
+         color: #fff;
+         text-align: center;
+      }
 
-         .yes-button {
-            background-color: #65b247;
-            color: white;
-         }
+      .market-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 20px;
+         width: 100%;
+      }
 
-         .yes-button:hover {
-            background-color: #55a237;
-         }
+      .market-item {
+         background-color: rgba(255, 255, 255, 0.9);
+         border-radius: 15px;
+         padding: 20px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         transition: transform 0.3s;
+         text-align: center;
+      }
 
-         .no-button {
-            background-color: white;
-            color: #333;
-            border: 1px solid #ddd;
-         }
+      .market-item:hover {
+         transform: translateY(-5px);
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
 
-         .no-button:hover {
-            background-color: #f5f5f5;
-         }
+      .market-item img {
+         width: 100%;
+         max-width: 200px;
+         margin-bottom: 15px;
+         object-fit: contain;
+         height: 180px;
+      }
 
-         .popup-logo {
-            max-width: 250px;
-            margin-bottom: 15px;
-         }
+      .market-item-title {
+         font-family: 'DynaPuff', sans-serif;
+         font-size: 18px;
+         color: #333;
+         margin-bottom: 10px;
+         min-height: 80px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+         line-height: 1.3;
+      }
 
-         .countdown-container {
-            font-family: 'DynaPuff', sans-serif;
-            margin: 20px 0;
-         }
+      .market-item-price {
+         font-family: 'DynaPuff', sans-serif;
+         font-size: 24px;
+         color: #333;
+         margin: 15px 0;
+         font-weight: bold;
+      }
 
+      .back-button {
+         position: fixed;
+         top: 20px;
+         left: 20px;
+         padding: 10px 20px;
+         background-color: rgba(255, 255, 255, 0.1);
+         border-radius: 10px;
+         color: #fff;
+         font-family: 'DynaPuff', sans-serif;
+         text-decoration: none;
+         transition: background-color 0.3s;
+      }
+
+      .back-button:hover {
+         background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      .rating {
+         color: #ffd700;
+         font-size: 20px;
+         margin: 10px 0;
+      }
+
+      .reviews {
+         color: #666;
+         font-size: 14px;
+         margin-bottom: 15px;
+      }
+
+      .quantity-input {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin-bottom: 15px;
+      }
+
+      .quantity-input span {
+         font-family: 'DynaPuff', sans-serif;
+         margin-right: 10px;
+         color: #333;
+      }
+
+      .quantity-input input {
+         width: 60px;
+         padding: 8px;
+         border: 1px solid #ddd;
+         border-radius: 5px;
+         text-align: center;
+      }
+
+      .add-to-cart {
+         background-color: #c3c14a;
+         color: white;
+         border: none;
+         padding: 12px 25px;
+         border-radius: 30px;
+         font-family: 'DynaPuff', sans-serif;
+         font-size: 16px;
+         cursor: pointer;
+         transition: background-color 0.3s;
+         width: 100%;
+         max-width: 200px;
+      }
+
+      .add-to-cart:hover {
+         background-color: #7cb342;
+      }
+
+      body {
+         background-color: #f5f5f5;
+      }
+
+      .body {
+         background: linear-gradient(135deg, #6b05ca 0%, #2575fc 100%);
+      }
+
+      /* Age verification popup styles */
+      .overlay {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.8);
+         z-index: 1000;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .popup {
+         background-color: white;
+         padding: 30px;
+         border-radius: 10px;
+         text-align: center;
+         max-width: 500px;
+         position: relative;
+         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .popup h2 {
+         color: #ffd81b;
+         font-size: 32px;
+         font-family: 'DynaPuff', sans-serif;
+         margin-bottom: 20px;
+      }
+
+      .popup p {
+         color: #333;
+         font-size: 16px;
+         line-height: 1.6;
+         margin-bottom: 25px;
+         font-family: Arial, sans-serif;
+      }
+
+      .popup-buttons {
+         display: flex;
+         justify-content: center;
+         gap: 20px;
+      }
+
+      .popup-button {
+         padding: 12px 40px;
+         border-radius: 30px;
+         font-family: 'DynaPuff', sans-serif;
+         font-size: 18px;
+         border: none;
+         cursor: pointer;
+         transition: background-color 0.3s;
+      }
+
+      .yes-button {
+         background-color: #ffd81b;
+         color: white;
+      }
+
+      .yes-button:hover {
+         background-color: #55a237;
+      }
+
+      .no-button {
+         background-color: white;
+         color: #333;
+         border: 1px solid #ddd;
+      }
+
+      .no-button:hover {
+         background-color: #f5f5f5;
+      }
+
+      .popup-logo {
+         max-width: 250px;
+         margin-bottom: 15px;
+      }
+
+      .countdown-container {
+         font-family: 'DynaPuff', sans-serif;
+         margin: 20px 0;
+      }
+
+      .countdown-timer {
+         font-size: 48px;
+         color: #ffd81b;
+         margin: 10px 0;
+      }
+
+      @media (max-width: 600px) {
          .countdown-timer {
-            font-size: 48px;
-            color: #65b247;
-            margin: 10px 0;
+            font-size: 28px;
+         }
+      }
+
+      .hidden {
+         display: none;
+      }
+
+      /* Blur the background when popup is active */
+      .blur-background {
+         filter: blur(5px);
+         pointer-events: none;
+      }
+
+      /* Background floating items */
+      .background-items {
+         position: fixed;
+         bottom: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         z-index: -1;
+         overflow: hidden;
+         pointer-events: none;
+      }
+
+      .floating-item {
+         position: absolute;
+         width: 80px;
+         height: 80px;
+         background-size: contain;
+         background-repeat: no-repeat;
+         background-position: center;
+         opacity: 0.15;
+         filter: brightness(1.5) drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
+         animation: float 15s infinite ease-in-out;
+      }
+
+      .floating-item:nth-child(1) {
+         background-image: url('https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/6745fc8cd2aa764aa7eec6d8_Coin.png');
+         bottom: 10%;
+         left: 10%;
+         animation-delay: 0s;
+         animation-duration: 18s;
+      }
+
+      .floating-item:nth-child(2) {
+         background-image: url('https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/6745fc8cd2aa764aa7eec6d8_Coin.png');
+         bottom: 20%;
+         left: 25%;
+         animation-delay: 2s;
+         animation-duration: 20s;
+         width: 100px;
+         height: 100px;
+      }
+
+      .floating-item:nth-child(3) {
+         background-image: url('https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/6745fc8cd2aa764aa7eec6d8_Coin.png');
+         bottom: 5%;
+         left: 50%;
+         animation-delay: 5s;
+         animation-duration: 17s;
+      }
+
+      .floating-item:nth-child(4) {
+         background-image: url('https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/6745fc8cd2aa764aa7eec6d8_Coin.png');
+         bottom: 15%;
+         left: 70%;
+         animation-delay: 3s;
+         animation-duration: 22s;
+         width: 120px;
+         height: 120px;
+      }
+
+      .floating-item:nth-child(5) {
+         background-image: url('https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/6745fc8cd2aa764aa7eec6d8_Coin.png');
+         bottom: 30%;
+         left: 85%;
+         animation-delay: 7s;
+         animation-duration: 19s;
+      }
+
+      .floating-item:nth-child(6) {
+         background-image: url('https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/6745fc8cd2aa764aa7eec6d8_Coin.png');
+         bottom: 25%;
+         left: 40%;
+         animation-delay: 4s;
+         animation-duration: 21s;
+         width: 90px;
+         height: 90px;
+      }
+
+      @keyframes float {
+         0% {
+            transform: translateY(0) rotate(0deg);
          }
 
-         @media (max-width: 600px) {
-            .countdown-timer {
-               font-size: 28px;
-            }
+         50% {
+            transform: translateY(-20px) rotate(10deg);
          }
 
-         .hidden {
-            display: none;
+         100% {
+            transform: translateY(0) rotate(0deg);
+         }
+      }
+
+      .pulse {
+         animation: pulse 3s infinite ease-in-out;
+      }
+
+      @keyframes pulse {
+         0% {
+            filter: brightness(1.5) drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
          }
 
-         /* Blur the background when popup is active */
-         .blur-background {
-            filter: blur(5px);
-            pointer-events: none;
+         50% {
+            filter: brightness(1.8) drop-shadow(0 0 15px rgba(255, 255, 255, 0.9));
          }
 
-         /* Background floating items */
-         .background-items {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            overflow: hidden;
-            pointer-events: none;
+         100% {
+            filter: brightness(1.5) drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
          }
+      }
 
-         .floating-item {
-            position: absolute;
-            width: 80px;
-            height: 80px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            opacity: 0.15;
-            filter: brightness(1.5)
-               drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
-            animation: float 15s infinite ease-in-out;
-         }
+      .more-items-container {
+         margin-top: 30px;
+         width: 100%;
+         max-height: 400px;
+         overflow: hidden;
+         position: relative;
+         padding-top: 0px;
+         margin-bottom: 50px;
+      }
 
-         .floating-item:nth-child(1) {
-            background-image: url('https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/6745fc8cd2aa764aa7eec6d8_Coin.png');
-            bottom: 10%;
-            left: 10%;
-            animation-delay: 0s;
-            animation-duration: 18s;
-         }
+      .more-items-title {
+         font-family: 'DynaPuff', sans-serif;
+         font-size: 32px;
+         color: #fff;
+         text-align: center;
+         margin-bottom: 15px;
+      }
 
-         .floating-item:nth-child(2) {
-            background-image: url('https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/6745fc8cd2aa764aa7eec6d8_Coin.png');
-            bottom: 20%;
-            left: 25%;
-            animation-delay: 2s;
-            animation-duration: 20s;
-            width: 100px;
-            height: 100px;
-         }
+      .more-items-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 20px;
+         width: 100%;
+      }
 
-         .floating-item:nth-child(3) {
-            background-image: url('https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/6745fc8cd2aa764aa7eec6d8_Coin.png');
-            bottom: 5%;
-            left: 50%;
-            animation-delay: 5s;
-            animation-duration: 17s;
-         }
-
-         .floating-item:nth-child(4) {
-            background-image: url('https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/6745fc8cd2aa764aa7eec6d8_Coin.png');
-            bottom: 15%;
-            left: 70%;
-            animation-delay: 3s;
-            animation-duration: 22s;
-            width: 120px;
-            height: 120px;
-         }
-
-         .floating-item:nth-child(5) {
-            background-image: url('https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/6745fc8cd2aa764aa7eec6d8_Coin.png');
-            bottom: 30%;
-            left: 85%;
-            animation-delay: 7s;
-            animation-duration: 19s;
-         }
-
-         .floating-item:nth-child(6) {
-            background-image: url('https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/6745fc8cd2aa764aa7eec6d8_Coin.png');
-            bottom: 25%;
-            left: 40%;
-            animation-delay: 4s;
-            animation-duration: 21s;
-            width: 90px;
-            height: 90px;
-         }
-
-         @keyframes float {
-            0% {
-               transform: translateY(0) rotate(0deg);
-            }
-            50% {
-               transform: translateY(-20px) rotate(10deg);
-            }
-            100% {
-               transform: translateY(0) rotate(0deg);
-            }
-         }
-
-         .pulse {
-            animation: pulse 3s infinite ease-in-out;
-         }
-
-         @keyframes pulse {
-            0% {
-               filter: brightness(1.5)
-                  drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
-            }
-            50% {
-               filter: brightness(1.8)
-                  drop-shadow(0 0 15px rgba(255, 255, 255, 0.9));
-            }
-            100% {
-               filter: brightness(1.5)
-                  drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
-            }
-         }
-
-         .more-items-container {
-            margin-top: 30px;
-            width: 100%;
-            max-height: 400px;
-            overflow: hidden;
-            position: relative;
-            padding-top: 0px;
-            margin-bottom: 50px;
-         }
-
-         .more-items-title {
-            font-family: 'DynaPuff', sans-serif;
-            font-size: 32px;
-            color: #fff;
-            text-align: center;
-            margin-bottom: 15px;
-         }
-
-         .more-items-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-            width: 100%;
-         }
-
-         .more-items-container::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 30%;
-            background: linear-gradient(
-               to bottom,
+      .more-items-container::after {
+         content: '';
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         width: 100%;
+         height: 30%;
+         background: linear-gradient(to bottom,
                rgba(106, 17, 203, 0) 0%,
                rgba(106, 17, 203, 0.6) 80%,
-               rgba(106, 17, 203, 0.8) 100%
-            );
-            pointer-events: none;
-         }
+               rgba(106, 17, 203, 0.8) 100%);
+         pointer-events: none;
+      }
 
-         .more-items-container .market-item {
-            transform: translateY(-20px);
-            transition: transform 0.3s;
-         }
+      .more-items-container .market-item {
+         transform: translateY(-20px);
+         transition: transform 0.3s;
+      }
 
-         .more-items-container .market-item:hover {
-            transform: translateY(-25px);
-         }
-      </style>
-   </head>
-   <body data-w-id="66df90cbac809ad3983beca4" class="body">
-      <!-- Background floating items -->
-      <div class="background-items">
-         <div class="floating-item pulse"></div>
-         <div class="floating-item pulse"></div>
-         <div class="floating-item pulse"></div>
-         <div class="floating-item pulse"></div>
-         <div class="floating-item pulse"></div>
-         <div class="floating-item pulse"></div>
-      </div>
+      .more-items-container .market-item:hover {
+         transform: translateY(-25px);
+      }
+   </style>
+</head>
 
-      <!-- Age verification popup -->
-      <div class="overlay" id="age-verification">
-         <div class="popup">
-            <img
-               src="https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/674799ffd77d1624ff889f59_Mask%20group.png"
-               alt="PIPA Logo"
-               class="popup-logo"
-            />
-            <h2>Are you 21 or older?</h2>
-            <p>
-               By clicking "YES" you confirm that you are 21 years of age or
-               older, and agree to our Terms of Service and Privacy Policy
-            </p>
-            <div class="popup-buttons">
-               <button class="popup-button yes-button" id="yes-button">
-                  YES
-               </button>
-               <button class="popup-button no-button" id="no-button">NO</button>
-            </div>
+<body data-w-id="66df90cbac809ad3983beca4" class="body">
+   <!-- Background floating items -->
+   <!-- <div class="background-items">
+      <div class="floating-item pulse"></div>
+      <div class="floating-item pulse"></div>
+      <div class="floating-item pulse"></div>
+      <div class="floating-item pulse"></div>
+      <div class="floating-item pulse"></div>
+      <div class="floating-item pulse"></div>
+   </div> -->
+
+   <!-- Age verification popup -->
+   <div class="overlay" id="age-verification">
+      <div class="popup">
+         <img src="./5.png" alt="PIPA Logo" class="popup-logo" />
+         <h2>Are you 21 or older?</h2>
+         <p>
+            By clicking "YES" you confirm that you are 21 years of age or
+            older, and agree to our Terms of Service and Privacy Policy
+         </p>
+         <div class="popup-buttons">
+            <button class="popup-button yes-button" id="yes-button">
+               YES
+            </button>
+            <button class="popup-button no-button" id="no-button">NO</button>
          </div>
       </div>
+   </div>
 
-      <!-- Countdown popup (hidden by default) -->
-      <div class="overlay hidden" id="countdown-popup">
-         <div class="popup">
-            <img
-               src="https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/674799ffd77d1624ff889f59_Mask%20group.png"
-               alt="PIPA Logo"
-               class="popup-logo"
-            />
-            <h2>COMING SOON!</h2>
-            <p>Our market is launching soon. Please check back in:</p>
-            <div class="countdown-container">
-               <div class="countdown-timer" id="countdown">00:00:00</div>
-            </div>
-            <div class="popup-buttons">
-               <button
-                  class="popup-button yes-button"
-                  onclick="window.location.href='/'"
-               >
-                  BACK TO HOME
-               </button>
-            </div>
+   <!-- Countdown popup (hidden by default) -->
+   <div class="overlay hidden" id="countdown-popup">
+      <div class="popup">
+         <img
+            src="https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/674799ffd77d1624ff889f59_Mask%20group.png"
+            alt="PIPA Logo" class="popup-logo" />
+         <h2>COMING SOON!</h2>
+         <p>Our market is launching soon. Please check back in:</p>
+         <div class="countdown-container">
+            <div class="countdown-timer" id="countdown">00:00:00</div>
+         </div>
+         <div class="popup-buttons">
+            <button class="popup-button yes-button" onclick="window.location.href='/'">
+               BACK TO HOME
+            </button>
          </div>
       </div>
+   </div>
 
-      <!-- Not old enough popup (hidden by default) -->
-      <div class="overlay hidden" id="not-old-enough">
-         <div class="popup">
-            <img
-               src="https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/674799ffd77d1624ff889f59_Mask%20group.png"
-               alt="PIPA Logo"
-               class="popup-logo"
-            />
-            <h2>Sorry!</h2>
-            <p>You are not old enough to view the site...</p>
-            <div class="popup-buttons">
-               <button
-                  class="popup-button yes-button"
-                  onclick="window.location.href='/'"
-               >
-                  BACK TO HOME
-               </button>
-            </div>
+   <!-- Not old enough popup (hidden by default) -->
+   <div class="overlay hidden" id="not-old-enough">
+      <div class="popup">
+         <img
+            src="https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/674799ffd77d1624ff889f59_Mask%20group.png"
+            alt="PIPA Logo" class="popup-logo" />
+         <h2>Sorry!</h2>
+         <p>You are not old enough to view the site...</p>
+         <div class="popup-buttons">
+            <button class="popup-button yes-button" onclick="window.location.href='/'">
+               BACK TO HOME
+            </button>
          </div>
       </div>
+   </div>
 
-      <div id="main-content">
-         <div class="div-block-6">
-            <a
-               href="https://x.com/PipaMeme"
-               target="_blank"
-               class="link-block-2 w-inline-block"
-               ><img
-                  src="https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/67475db98293dba0a3368a72_%F0%9D%95%8F.png"
-                  loading="lazy"
-                  width="54"
-                  alt=""
-                  class="image-4"
-               />
-               <div class="text-block-6">SOCIAL</div></a
-            ><a
-               href="https://t.me/PipaMeme"
-               target="_blank"
-               class="link-block-2 w-inline-block"
-               ><img
-                  src="https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/67475db8ae1d83d4a80a827c_tg.png"
-                  loading="lazy"
-                  alt=""
-                  class="image-4"
-               />
-               <div class="text-block-6">CHAT</div></a
-            ><a
-               href="https://jup.ag/swap/SOL-RHVhTbHuLipAMEkDYo6N9e5ZnhM1d3iFrAD6tUjpump"
-               target="_blank"
-               class="link-block-2 w-inline-block"
-               ><img src="/jup.png" loading="lazy" alt="" class="image-4 _2" />
-               <div class="text-block-6">BUY</div>
-               <div class="live">BUY NOW</div></a
-            >
+   <div id="main-content">
+      <div class="div-block-6">
+
+         </a>
+      </div>
+
+      <a href="/" class="back-button">← BACK</a>
+
+      <div class="market-container">
+         <h1 class="market-title">Bamz Shop</h1>
+
+         <div class="market-grid">
+            <div class="market-item">
+               <img src="1.png" alt="Magic Mushroom Syrup | Galaxy Grape – 4oz" />
+               <div class="market-item-title">
+                  Magic Mushroom Syrup | Galaxy Grape – 4oz
+               </div>
+               <div class="market-item-price">$BAMZ 4999</div>
+               <div class="rating">★★★★☆</div>
+               <div class="reviews">0 reviews</div>
+               <div class="quantity-input">
+                  <span>Quantity:</span>
+                  <input type="number" min="1" value="1" />
+               </div>
+               <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="market-item">
+               <img src="2.png" alt="Super Cherry Mushroom Gummies | Megadose 7500mg – 15ct" />
+               <div class="market-item-title">
+                  Super Cherry Mushroom Gummies | Megadose 7500mg – 15ct
+               </div>
+               <div class="market-item-price">$BAMZ 1400</div>
+               <div class="rating">★★★★☆</div>
+               <div class="reviews">0 reviews</div>
+               <div class="quantity-input">
+                  <span>Quantity:</span>
+                  <input type="number" min="1" value="1" />
+               </div>
+               <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="market-item">
+               <img src="3.png" alt="Passion Fruit Mushroom Chocolate Bar | Megasdose 12g Bar" />
+               <div class="market-item-title">
+                  Passion Fruit Mushroom Chocolate Bar | Megasdose 12g Bar
+               </div>
+               <div class="market-item-price">$BAMZ 6999</div>
+               <div class="rating">★★★★★</div>
+               <div class="reviews">0 reviews</div>
+               <div class="quantity-input">
+                  <span>Quantity:</span>
+                  <input type="number" min="1" value="1" />
+               </div>
+               <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="market-item">
+               <img src="4.png" alt="Juicy Mango Magic Mushroom Gummies | 15ct" />
+               <div class="market-item-title">
+                  Juicy Mango Magic Mushroom Gummies | 15ct
+               </div>
+               <div class="market-item-price">$BAMZ 2999</div>
+               <div class="rating">★★★★★</div>
+               <div class="reviews">0 reviews</div>
+               <div class="quantity-input">
+                  <span>Quantity:</span>
+                  <input type="number" min="1" value="1" />
+               </div>
+               <button class="add-to-cart">Add to cart</button>
+            </div>
          </div>
 
-         <a href="/" class="back-button">← BACK</a>
-
-         <div class="market-container">
-            <h1 class="market-title">PIPA MARKET</h1>
-
-            <div class="market-grid">
+         <!-- Additional partially visible items row -->
+         <div class="more-items-container">
+            <h2 class="more-items-title">More Products</h2>
+            <div class="more-items-grid">
                <div class="market-item">
-                  <img
-                     src="/1.png"
-                     alt="Magic Mushroom Syrup | Galaxy Grape – 4oz"
-                  />
+                  <img src="./4.png" alt="PIPA Token Mint" />
                   <div class="market-item-title">
-                     Magic Mushroom Syrup | Galaxy Grape – 4oz
+                     Green Crack THCP Vape | 0.5ml – Sativa
                   </div>
-                  <div class="market-item-price">$PIPA 4999</div>
+                  <div class="market-item-price">$BAMZ 1999</div>
                   <div class="rating">★★★★☆</div>
                   <div class="reviews">0 reviews</div>
-                  <div class="quantity-input">
-                     <span>Quantity:</span>
-                     <input type="number" min="1" value="1" />
-                  </div>
-                  <button class="add-to-cart">Add to cart</button>
                </div>
 
                <div class="market-item">
-                  <img
-                     src="/2.png"
-                     alt="Super Cherry Mushroom Gummies | Megadose 7500mg – 15ct"
-                  />
+                  <img src="./3.png" alt="PIPA Token Orange" />
                   <div class="market-item-title">
-                     Super Cherry Mushroom Gummies | Megadose 7500mg – 15ct
+                     Northern Lights THCP Vape | 0.5ml – Indica
                   </div>
-                  <div class="market-item-price">$PIPA 1400</div>
+                  <div class="market-item-price">$BAMZ 1999</div>
                   <div class="rating">★★★★☆</div>
                   <div class="reviews">0 reviews</div>
-                  <div class="quantity-input">
-                     <span>Quantity:</span>
-                     <input type="number" min="1" value="1" />
-                  </div>
-                  <button class="add-to-cart">Add to cart</button>
                </div>
 
                <div class="market-item">
-                  <img
-                     src="/3.png"
-                     alt="Passion Fruit Mushroom Chocolate Bar | Megasdose 12g Bar"
-                  />
+                  <img src="./2.png" alt="PIPA Token Grape" />
                   <div class="market-item-title">
-                     Passion Fruit Mushroom Chocolate Bar | Megasdose 12g Bar
+                     White Runtz THCP Vape | 0.5ml – Hybrid
                   </div>
-                  <div class="market-item-price">$PIPA 6999</div>
-                  <div class="rating">★★★★★</div>
+                  <div class="market-item-price">$BAMZ 1999</div>
+                  <div class="rating">★★★★☆</div>
                   <div class="reviews">0 reviews</div>
-                  <div class="quantity-input">
-                     <span>Quantity:</span>
-                     <input type="number" min="1" value="1" />
-                  </div>
-                  <button class="add-to-cart">Add to cart</button>
                </div>
 
                <div class="market-item">
-                  <img
-                     src="/4.png"
-                     alt="Juicy Mango Magic Mushroom Gummies | 15ct"
-                  />
+                  <img src="./1.png" alt="PIPA Token Bundle" />
                   <div class="market-item-title">
-                     Juicy Mango Magic Mushroom Gummies | 15ct
+                     PIPA TOKEN - Variety Pack | Exclusive Package
                   </div>
-                  <div class="market-item-price">$PIPA 2999</div>
-                  <div class="rating">★★★★★</div>
+                  <div class="market-item-price">$BAMZ 1999</div>
+                  <div class="rating">★★★★☆</div>
                   <div class="reviews">0 reviews</div>
-                  <div class="quantity-input">
-                     <span>Quantity:</span>
-                     <input type="number" min="1" value="1" />
-                  </div>
-                  <button class="add-to-cart">Add to cart</button>
                </div>
-            </div>
-
-            <!-- Additional partially visible items row -->
-            <div class="more-items-container">
-               <h2 class="more-items-title">More Products</h2>
-               <div class="more-items-grid">
-                  <div class="market-item">
-                     <img
-                        src="https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/6745fc8cd2aa764aa7eec6d8_Coin.png"
-                        alt="PIPA Token Mint"
-                     />
-                     <div class="market-item-title">
-                        Green Crack THCP Vape | 0.5ml – Sativa
-                     </div>
-                     <div class="market-item-price">$PIPA 1999</div>
-                     <div class="rating">★★★★☆</div>
-                     <div class="reviews">0 reviews</div>
+               <div class="market-item">
+                  <img src="./1.png" alt="PIPA Token Bundle" />
+                  <div class="market-item-title">
+                     PIPA TOKEN - Variety Pack | Exclusive Package
                   </div>
-
-                  <div class="market-item">
-                     <img
-                        src="https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/6745fc8cd2aa764aa7eec6d8_Coin.png"
-                        alt="PIPA Token Orange"
-                     />
-                     <div class="market-item-title">
-                        Northern Lights THCP Vape | 0.5ml – Indica
-                     </div>
-                     <div class="market-item-price">$PIPA 1999</div>
-                     <div class="rating">★★★★☆</div>
-                     <div class="reviews">0 reviews</div>
+                  <div class="market-item-price">$BAMZ 1999</div>
+                  <div class="rating">★★★★☆</div>
+                  <div class="reviews">0 reviews</div>
+               </div>
+               <div class="market-item">
+                  <img src="./1.png" alt="PIPA Token Bundle" />
+                  <div class="market-item-title">
+                     PIPA TOKEN - Variety Pack | Exclusive Package
                   </div>
-
-                  <div class="market-item">
-                     <img
-                        src="https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/6745fc8cd2aa764aa7eec6d8_Coin.png"
-                        alt="PIPA Token Grape"
-                     />
-                     <div class="market-item-title">
-                        White Runtz THCP Vape | 0.5ml – Hybrid
-                     </div>
-                     <div class="market-item-price">$PIPA 1999</div>
-                     <div class="rating">★★★★☆</div>
-                     <div class="reviews">0 reviews</div>
+                  <div class="market-item-price">$BAMZ 1999</div>
+                  <div class="rating">★★★★☆</div>
+                  <div class="reviews">0 reviews</div>
+               </div>
+               <div class="market-item">
+                  <img src="./1.png" alt="PIPA Token Bundle" />
+                  <div class="market-item-title">
+                     PIPA TOKEN - Variety Pack | Exclusive Package
                   </div>
-
-                  <div class="market-item">
-                     <img
-                        src="https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/6745fc8cd2aa764aa7eec6d8_Coin.png"
-                        alt="PIPA Token Bundle"
-                     />
-                     <div class="market-item-title">
-                        PIPA TOKEN - Variety Pack | Exclusive Package
-                     </div>
-                     <div class="market-item-price">$PIPA 1999</div>
-                     <div class="rating">★★★★☆</div>
-                     <div class="reviews">0 reviews</div>
-                  </div>
+                  <div class="market-item-price">$BAMZ 1999</div>
+                  <div class="rating">★★★★☆</div>
+                  <div class="reviews">0 reviews</div>
                </div>
             </div>
          </div>
       </div>
+   </div>
 
-      <script
-         src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=673f1d072d0a879bad4b3bd1"
-         type="text/javascript"
-         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-         crossorigin="anonymous"
-      ></script>
-      <script
-         src="https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/js/aero-meme-9dc0f3c7ce7a48bdfc7589dcf5095.1c2670135.js"
-         type="text/javascript"
-      ></script>
+   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=673f1d072d0a879bad4b3bd1"
+      type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"></script>
+   <script
+      src="https://cdn.prod.website-files.com/673f1d072d0a879bad4b3bd1/js/aero-meme-9dc0f3c7ce7a48bdfc7589dcf5095.1c2670135.js"
+      type="text/javascript"></script>
 
-      <script>
-         document.addEventListener('DOMContentLoaded', function () {
-            const ageVerification = document.getElementById('age-verification');
-            const countdownPopup = document.getElementById('countdown-popup');
-            const notOldEnough = document.getElementById('not-old-enough');
-            const yesButton = document.getElementById('yes-button');
-            const noButton = document.getElementById('no-button');
-            const mainContent = document.getElementById('main-content');
-            const countdownElement = document.getElementById('countdown');
+   <script>
+      document.addEventListener('DOMContentLoaded', function () {
+         const ageVerification = document.getElementById('age-verification');
+         const countdownPopup = document.getElementById('countdown-popup');
+         const notOldEnough = document.getElementById('not-old-enough');
+         const yesButton = document.getElementById('yes-button');
+         const noButton = document.getElementById('no-button');
+         const mainContent = document.getElementById('main-content');
+         const countdownElement = document.getElementById('countdown');
 
-            // Add blur to main content when popup is showing
-            mainContent.classList.add('blur-background');
+         // Add blur to main content when popup is showing
+         mainContent.classList.add('blur-background');
 
-            // Set countdown to May 11, 2025, 00:00:00 UTC
-            const countdownDate = new Date('May 11, 2025 00:00:00 UTC');
+         // Set countdown to May 11, 2025, 00:00:00 UTC
+         const countdownDate = new Date('May 20, 2025 15:00:00 UTC');
 
-            // Format the date for display in a more readable format
-            const formattedDate = countdownDate.toLocaleString('en-US', {
-               year: 'numeric',
-               month: 'long',
-               day: 'numeric',
-               hour: '2-digit',
-               minute: '2-digit',
-               timeZoneName: 'short'
-            });
+         // Format the date for display in a more readable format
+         const formattedDate = countdownDate.toLocaleString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+            timeZoneName: 'short'
+         });
 
-            // Update the text to include the target date
-            document.querySelector(
-               '#countdown-popup p'
-            ).innerHTML = `Our market is launching on May 10, 2025 10:00 PM GMT-4. Please check back in:`;
+         // Update the text to include the target date
+         document.querySelector(
+            '#countdown-popup p'
+         ).innerHTML = `Our market is launching on May 20, 2025 3:00 PM UTC. Please check back in:`;
 
-            // Update the timer every second
-            function updateCountdown() {
-               const now = new Date().getTime();
-               const distance = countdownDate - now;
+         // Update the timer every second
+         function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
 
-               // If countdown is finished
-               if (distance < 0) {
-                  countdownElement.innerHTML = 'LAUNCHED!';
-                  return;
-               }
-
-               // Calculate days, hours, minutes, and seconds
-               const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-               const hours = Math.floor(
-                  (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-               );
-               const minutes = Math.floor(
-                  (distance % (1000 * 60 * 60)) / (1000 * 60)
-               );
-               const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-               // Display the result
-               countdownElement.innerHTML =
-                  days +
-                  'd ' +
-                  (hours < 10 ? '0' + hours : hours) +
-                  'h ' +
-                  (minutes < 10 ? '0' + minutes : minutes) +
-                  'm ' +
-                  (seconds < 10 ? '0' + seconds : seconds) +
-                  's';
+            // If countdown is finished
+            if (distance < 0) {
+               countdownElement.innerHTML = 'LAUNCHED!';
+               return;
             }
 
-            // Run updateCountdown once immediately
-            updateCountdown();
+            // Calculate days, hours, minutes, and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor(
+               (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+            );
+            const minutes = Math.floor(
+               (distance % (1000 * 60 * 60)) / (1000 * 60)
+            );
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            // Yes button click
-            yesButton.addEventListener('click', function () {
-               ageVerification.classList.add('hidden');
-               countdownPopup.classList.remove('hidden');
-               // Start the countdown timer interval
-               setInterval(updateCountdown, 1000);
-            });
+            // Display the result
+            countdownElement.innerHTML =
+               days +
+               'd ' +
+               (hours < 10 ? '0' + hours : hours) +
+               'h ' +
+               (minutes < 10 ? '0' + minutes : minutes) +
+               'm ' +
+               (seconds < 10 ? '0' + seconds : seconds) +
+               's';
+         }
 
-            // No button click
-            noButton.addEventListener('click', function () {
-               ageVerification.classList.add('hidden');
-               notOldEnough.classList.remove('hidden');
-            });
+         // Run updateCountdown once immediately
+         updateCountdown();
+
+         // Yes button click
+         yesButton.addEventListener('click', function () {
+            ageVerification.classList.add('hidden');
+            countdownPopup.classList.remove('hidden');
+            // Start the countdown timer interval
+            setInterval(updateCountdown, 1000);
          });
-      </script>
-   </body>
+
+         // No button click
+         noButton.addEventListener('click', function () {
+            ageVerification.classList.add('hidden');
+            notOldEnough.classList.remove('hidden');
+         });
+      });
+   </script>
+</body>
+
 </html>
